@@ -1,6 +1,6 @@
-# Personal Portfolio Website
+# Afline Jasmine — Personal Portfolio Website
 
-This repository contains a simple personal portfolio website built with plain HTML, CSS, and JavaScript.
+This repository contains a personal portfolio website built with HTML, CSS, and JavaScript.
 
 ## ✅ What’s Included
 
