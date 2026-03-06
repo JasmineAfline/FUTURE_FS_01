@@ -7,25 +7,25 @@ const projectsGrid = document.getElementById("projectsGrid");
 
 const projects = [
   {
-    title: "TicketWise Event Website",
+    title: "Portfolio Website",
     description:
-      "Full-stack event management system with multi-role authentication, M-Pesa integration, and real-time sales reporting.",
-    tags: ["Node.js", "React", "Express", "MongoDB", "M-Pesa"],
-    url: "https://github.com/JasmineAfline/TicketWise-event",
+      "A responsive portfolio website with a smooth UI, project showcase, and contact form.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    url: "#projects",
   },
   {
-    title: "Helphive Donation Website",
+    title: "Task Tracker",
     description:
-      "A donation platform connecting donors and NGOs, featuring a secure backend and responsive UI.",
-    tags: ["Laravel", "PHP", "JavaScript", "HTML", "CSS"],
-    url: "https://github.com/JasmineAfline/Helphive_donation_website",
+      "A simple task tracking app with local storage persistence and dynamic filtering.",
+    tags: ["JavaScript", "LocalStorage"],
+    url: "#projects",
   },
   {
-    title: "Final Project PLP (E-commerce)",
+    title: "Blog API (Node.js)",
     description:
-      "A functional storefront with product filtering, dynamic cart, and local storage persistence.",
-    tags: ["JavaScript", "HTML", "CSS", "LocalStorage"],
-    url: "https://github.com/JasmineAfline/FinalProjectPLP",
+      "A RESTful Node.js backend for managing blog posts, designed for future deployment.",
+    tags: ["Node.js", "Express", "MongoDB (optional)"],
+    url: "#projects",
   },
 ];
 
