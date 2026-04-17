@@ -1,0 +1,72 @@
+<section id="home" class="min-h-screen flex items-center justify-center relative px-6 py-20 overflow-hidden bg-[#0f1115]">
+    
+    <!-- Background glow effects -->
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-600/10 blur-[120px] rounded-full"></div>
+    <div class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-600/10 blur-[100px] rounded-full"></div>
+
+    <!-- Main container -->
+    <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center relative z-10 glass rounded-[2.5rem] p-8 md:p-16 border-white/5 shadow-2xl">
+        
+        <!-- LEFT CONTENT -->
+        <div class="reveal">
+            <h1 class="text-white font-bold leading-tight mb-4">
+                <span class="text-4xl md:text-5xl block text-slate-400 font-medium mb-2 uppercase tracking-tighter">HI,</span>
+                <span class="text-6xl md:text-7xl block mb-2">I'm <span class="text-white">Afline,</span></span>
+                <span class="text-5xl md:text-6xl block text-[#f472b6] font-extrabold uppercase tracking-tight">Web Developer</span>
+            </h1>
+            
+            <p class="text-slate-400 text-lg mb-10 max-w-md">
+                Building high-end digital experiences with a focus on modern UI and seamless interactions.
+            </p>
+
+            <div class="flex flex-wrap gap-4">
+                <a href="#projects" class="px-8 py-4 bg-[#a78bfa] text-[#0f1115] font-bold rounded-2xl hover:scale-105 transition shadow-lg shadow-purple-500/20">
+                    My Work
+                </a>
+                <a href="assets/resume.pdf" download class="px-8 py-4 border border-white/20 text-white font-bold rounded-2xl hover:bg-white/5 transition">
+                    Download CV
+                </a>
+            </div>
+
+            <div class="mt-16 flex items-center gap-4">
+                <div class="w-px h-12 bg-gradient-to-b from-purple-500 to-transparent"></div>
+                <div class="flex flex-col gap-2">
+                    <span class="text-[10px] uppercase tracking-[0.3em] text-slate-500">Scroll Down</span>
+                    <div class="flex gap-1">
+                        <div class="w-1 h-1 bg-purple-500 rounded-full animate-bounce"></div>
+                        <div class="w-1 h-1 bg-purple-500/50 rounded-full animate-bounce delay-75"></div>
+                        <div class="w-1 h-1 bg-purple-500/20 rounded-full animate-bounce delay-150"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT 3D VISUAL -->
+        <div class="relative hidden md:block group">
+    
+    <!-- Floating laptop (REAL IMAGE) -->
+    <div class="relative z-10 animate-[float_6s_ease-in-out_infinite]">
+        <img 
+            src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80"
+            alt="Laptop working setup"
+            class="w-[420px] mx-auto rounded-2xl drop-shadow-[0_35px_35px_rgba(167,139,250,0.35)] transition-transform duration-500 group-hover:scale-105 group-hover:rotate-2"
+        />
+    </div>
+
+    <!-- Glow effect -->
+    <div class="absolute inset-0 bg-purple-500/20 blur-[90px] rounded-full scale-75 group-hover:scale-100 transition duration-1000"></div>
+</div>
+
+            <!-- Glow behind laptop -->
+            <div class="absolute inset-0 bg-purple-500/20 blur-[90px] rounded-full scale-75 group-hover:scale-100 transition duration-1000"></div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    @keyframes float {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(2deg); }
+    }
+</style>

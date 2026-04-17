@@ -1,142 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal portfolio showcasing skills, projects, and contact information." />
-    <meta name="author" content="Jasmine" />
-    <title>Jasmine • Portfolio</title>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afline Jasmine | Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body { font-family: 'Outfit', sans-serif; }
+        /* Prevent layout shift before JS loads */
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-[#0f1115] text-white overflow-x-hidden">
 
-    <!-- Open Graph / Social preview -->
-    <meta property="og:title" content="Jasmine • Portfolio" />
-    <meta property="og:description" content="A personal portfolio showing skills, projects, and ways to get in touch." />
-    <meta property="og:type" content="website" />
-
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-
-  <body>
-    <header class="site-header" id="top">
-      <nav class="nav">
-        <a class="brand" href="#top">Jasmine</a>
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links" data-nav>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="nav-slot"></div>
 
     <main>
-      <section class="hero" id="hero">
-        <div class="container">
-          <h1 class="hero-title">Hi, I’m <span class="highlight">Afline Jasmine</span></h1>
-          <p class="hero-sub">I build web experiences with HTML, CSS, and JavaScript.</p>
-          <div class="hero-actions">
-            <a class="btn" href="#projects">See my work</a>
-            <a class="btn btn-secondary" href="#contact">Get in touch</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="about">
-        <div class="container">
-          <h2>About Me</h2>
-          <p>
-            I’m a web developer who enjoys building clean, responsive interfaces with a focus on
-            usability and performance. I’m currently exploring React and modern frontend tooling.
-          </p>
-          <ul class="stats">
-            <li>
-              <strong>Experience</strong>
-              <span>2+ years</span>
-            </li>
-            <li>
-              <strong>Focus</strong>
-              <span>Frontend + UI</span>
-            </li>
-            <li>
-              <strong>Location</strong>
-              <span>Remote / Anywhere</span>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section" id="projects">
-        <div class="container">
-          <h2>Featured Projects</h2>
-          <p class="section-intro">
-            A selection of projects that showcase my technical skills and problem solving.
-          </p>
-
-          <div class="projects-grid" id="projectsGrid">
-            <!-- Projects are rendered via JavaScript for easier updates -->
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="skills">
-        <div class="container">
-          <h2>Skills</h2>
-          <p class="section-intro">Tools & technologies I use regularly.</p>
-          <div class="skill-grid">
-            <span>HTML &amp; CSS</span>
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>Node.js</span>
-            <span>Git</span>
-            <span>Responsive Design</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="contact">
-        <div class="container">
-          <h2>Contact Me</h2>
-          <p class="section-intro">
-            Drop me a message and I’ll get back to you as soon as I can.
-          </p>
-
-          <form class="contact-form" id="contactForm">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button class="btn" type="submit">Send message</button>
-            <p class="form-status" id="formStatus" aria-live="polite"></p>
-          </form>
-
-          <div class="contact-details">
-            <p>
-              <strong>Email</strong><br />
-              <a href="mailto:you@example.com">you@example.com</a>
-            </p>
-            <p>
-              <strong>Location</strong><br />
-              Remote / Anywhere
-            </p>
-          </div>
-        </div>
-      </section>
+        <div id="hero-slot"></div>
+        <div id="about-slot"></div>
+        <div id="skills-slot"></div>
+        <div id="projects-slot"></div>
+        <div id="contact-slot"></div>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>© <span id="year"></span> Your Name. Built with HTML, CSS &amp; JavaScript.</p>
-      </div>
-    </footer>
-
-    <script src="app.js"></script>
-  </body>
+    <script src="js/main.js"></script>
+</body>
 </html>
